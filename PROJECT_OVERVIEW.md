@@ -174,22 +174,23 @@ OrderDetails
 
 ## 📈 Sample Data
 
-### Categories (8)
+### Categories (9)
 1. Action Figures
 2. Educational Toys
 3. Dolls & Stuffed Animals
 4. Building Blocks
 5. Board Games
-6. Outdoor Toys
-7. Puzzles
+6. Outdoor Toys (Currently Out of Stock)
+7. Puzzles (Reduced Prices!)
 8. Arts & Crafts
+9. Remote Control Toys (New!)
 
-### Products (24)
+### Products (27)
 Sample products across all categories with:
 - Names and descriptions
-- Prices: $11.99 - $49.99
+- Prices: $11.99 - $89.99
 - Age ranges: 2-14 years
-- Stock quantities
+- Stock quantities (Updated stock levels for popular categories)
 - Placeholder images
 
 ### Users (2)
@@ -295,8 +296,8 @@ This project demonstrates:
 | Components | 5 |
 | Services | 2 |
 | Repositories | 3 |
-| Sample Products | 24 |
-| Categories | 8 |
+| Sample Products | 27 |
+| Categories | 9 |
 
 ## 🌟 Next Steps for Enhancement
 

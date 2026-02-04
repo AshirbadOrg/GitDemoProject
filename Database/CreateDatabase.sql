@@ -83,7 +83,8 @@ INSERT INTO Categories (Name, Description) VALUES
 ('Board Games', 'Fun board games for family entertainment'),
 ('Outdoor Toys', 'Toys for outdoor play and activities'),
 ('Puzzles', 'Jigsaw puzzles and brain teasers'),
-('Arts & Crafts', 'Creative art supplies and craft kits');
+('Arts & Crafts', 'Creative art supplies and craft kits'),
+('Remote Control Toys', 'RC cars, drones, and remote-controlled vehicles');
 GO
 
 -- Insert Sample Products
@@ -94,9 +95,9 @@ INSERT INTO Products (Name, Description, Price, CategoryId, StockQuantity, Image
 ('Robot Transformer', 'Transforming robot toy with lights', 24.99, 1, 40, 'https://via.placeholder.com/300?text=Robot+Transformer', '7-14 years'),
 
 -- Educational Toys
-('STEM Learning Kit', 'Science and engineering learning set', 39.99, 2, 30, 'https://via.placeholder.com/300?text=STEM+Kit', '8-12 years'),
-('Alphabet Learning Blocks', 'Colorful blocks with letters and numbers', 18.99, 2, 60, 'https://via.placeholder.com/300?text=Learning+Blocks', '2-5 years'),
-('Electronic Learning Tablet', 'Interactive tablet for early learning', 34.99, 2, 45, 'https://via.placeholder.com/300?text=Learning+Tablet', '3-7 years'),
+('STEM Learning Kit', 'Science and engineering learning set', 39.99, 2, 80, 'https://via.placeholder.com/300?text=STEM+Kit', '8-12 years'),
+('Alphabet Learning Blocks', 'Colorful blocks with letters and numbers', 18.99, 2, 100, 'https://via.placeholder.com/300?text=Learning+Blocks', '2-5 years'),
+('Electronic Learning Tablet', 'Interactive tablet for early learning', 34.99, 2, 85, 'https://via.placeholder.com/300?text=Learning+Tablet', '3-7 years'),
 
 -- Dolls & Stuffed Animals
 ('Princess Doll Collection', 'Beautiful princess dolls with outfits', 22.99, 3, 55, 'https://via.placeholder.com/300?text=Princess+Dolls', '4-10 years'),
@@ -109,24 +110,29 @@ INSERT INTO Products (Name, Description, Price, CategoryId, StockQuantity, Image
 ('Vehicle Builder Set', 'Create cars, trucks, and more', 27.99, 4, 50, 'https://via.placeholder.com/300?text=Vehicle+Set', '6-12 years'),
 
 -- Board Games
-('Family Adventure Game', 'Exciting adventure board game for families', 25.99, 5, 45, 'https://via.placeholder.com/300?text=Adventure+Game', '8+ years'),
-('Memory Match Game', 'Classic memory matching card game', 12.99, 5, 80, 'https://via.placeholder.com/300?text=Memory+Game', '4+ years'),
-('Strategy Challenge', 'Strategic thinking board game', 29.99, 5, 35, 'https://via.placeholder.com/300?text=Strategy+Game', '10+ years'),
+('Family Adventure Game', 'Exciting adventure board game for families', 25.99, 5, 90, 'https://via.placeholder.com/300?text=Adventure+Game', '8+ years'),
+('Memory Match Game', 'Classic memory matching card game', 12.99, 5, 120, 'https://via.placeholder.com/300?text=Memory+Game', '4+ years'),
+('Strategy Challenge', 'Strategic thinking board game', 29.99, 5, 75, 'https://via.placeholder.com/300?text=Strategy+Game', '10+ years'),
 
--- Outdoor Toys
-('Flying Disc Set', 'Colorful flying discs for outdoor fun', 14.99, 6, 65, 'https://via.placeholder.com/300?text=Flying+Disc', '6+ years'),
-('Bubble Machine Deluxe', 'Automatic bubble blowing machine', 22.99, 6, 40, 'https://via.placeholder.com/300?text=Bubble+Machine', '3+ years'),
-('Jump Rope with Counter', 'Digital counting jump rope', 11.99, 6, 90, 'https://via.placeholder.com/300?text=Jump+Rope', '5+ years'),
+-- Outdoor Toys (OUT OF STOCK - Restocking in 15 days)
+('Flying Disc Set', 'Colorful flying discs for outdoor fun', 14.99, 6, 0, 'https://via.placeholder.com/300?text=Flying+Disc', '6+ years'),
+('Bubble Machine Deluxe', 'Automatic bubble blowing machine', 22.99, 6, 0, 'https://via.placeholder.com/300?text=Bubble+Machine', '3+ years'),
+('Jump Rope with Counter', 'Digital counting jump rope', 11.99, 6, 0, 'https://via.placeholder.com/300?text=Jump+Rope', '5+ years'),
 
 -- Puzzles
-('1000 Piece Jigsaw Puzzle', 'Challenging landscape puzzle', 19.99, 7, 50, 'https://via.placeholder.com/300?text=Jigsaw+Puzzle', '10+ years'),
-('3D Crystal Puzzle', 'Beautiful 3D crystal puzzle', 16.99, 7, 45, 'https://via.placeholder.com/300?text=3D+Puzzle', '12+ years'),
-('Wooden Shape Sorter', 'Educational shape sorting puzzle', 13.99, 7, 70, 'https://via.placeholder.com/300?text=Shape+Sorter', '2-4 years'),
+('1000 Piece Jigsaw Puzzle', 'Challenging landscape puzzle', 17.99, 7, 50, 'https://via.placeholder.com/300?text=Jigsaw+Puzzle', '10+ years'),
+('3D Crystal Puzzle', 'Beautiful 3D crystal puzzle', 14.99, 7, 45, 'https://via.placeholder.com/300?text=3D+Puzzle', '12+ years'),
+('Wooden Shape Sorter', 'Educational shape sorting puzzle', 11.99, 7, 70, 'https://via.placeholder.com/300?text=Shape+Sorter', '2-4 years'),
 
 -- Arts & Crafts
 ('Deluxe Art Set', 'Complete art supplies set with 150 pieces', 34.99, 8, 40, 'https://via.placeholder.com/300?text=Art+Set', '6+ years'),
 ('Jewelry Making Kit', 'Create your own jewelry', 21.99, 8, 55, 'https://via.placeholder.com/300?text=Jewelry+Kit', '8+ years'),
-('Paint by Numbers', 'Beautiful paint by numbers art kit', 17.99, 8, 60, 'https://via.placeholder.com/300?text=Paint+Kit', '7+ years');
+('Paint by Numbers', 'Beautiful paint by numbers art kit', 17.99, 8, 60, 'https://via.placeholder.com/300?text=Paint+Kit', '7+ years'),
+
+-- Remote Control Toys
+('RC Racing Car', 'High-speed remote control racing car', 39.99, 9, 45, 'https://via.placeholder.com/300?text=RC+Car', '8+ years'),
+('Drone with Camera', 'Quadcopter drone with HD camera', 89.99, 9, 20, 'https://via.placeholder.com/300?text=Drone', '12+ years'),
+('RC Monster Truck', 'All-terrain remote control monster truck', 49.99, 9, 30, 'https://via.placeholder.com/300?text=Monster+Truck', '8+ years');
 GO
 
 -- Insert Sample Admin User (password: Admin123!)
