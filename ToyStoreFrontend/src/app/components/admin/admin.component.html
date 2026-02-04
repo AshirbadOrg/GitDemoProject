@@ -1,0 +1,93 @@
+<div class="admin-container">
+  <header class="admin-header">
+    <h1>🛠️ Admin Panel</h1>
+    <button class="btn btn-back" (click)="goBack()">← Back to Store</button>
+  </header>
+
+  <div class="actions">
+    <button class="btn btn-primary" (click)="showAddForm()">+ Add New Product</button>
+  </div>
+
+  <!-- Product Form -->
+  <div *ngIf="showForm" class="product-form">
+    <h2>{{ editMode ? 'Edit Product' : 'Add New Product' }}</h2>
+    <form (ngSubmit)="saveProduct()">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Product Name</label>
+          <input type="text" [(ngModel)]="currentProduct.name" name="name" required class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <select [(ngModel)]="currentProduct.categoryId" name="category" required class="form-control">
+            <option [value]="0">Select Category</option>
+            <option *ngFor="let category of categories" [value]="category.categoryId">
+              {{ category.name }}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Description</label>
+        <textarea [(ngModel)]="currentProduct.description" name="description" required class="form-control" rows="3"></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Price</label>
+          <input type="number" [(ngModel)]="currentProduct.price" name="price" required step="0.01" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Stock Quantity</label>
+          <input type="number" [(ngModel)]="currentProduct.stockQuantity" name="stock" required class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Age Range</label>
+          <input type="text" [(ngModel)]="currentProduct.ageRange" name="ageRange" required class="form-control" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Image URL</label>
+        <input type="text" [(ngModel)]="currentProduct.imageUrl" name="imageUrl" class="form-control" />
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-success">{{ editMode ? 'Update' : 'Create' }}</button>
+        <button type="button" class="btn btn-secondary" (click)="cancelForm()">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Products Table -->
+  <div class="products-table">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Age Range</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.productId }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.categoryName }}</td>
+          <td>${{ product.price.toFixed(2) }}</td>
+          <td>{{ product.stockQuantity }}</td>
+          <td>{{ product.ageRange }}</td>
+          <td class="actions-cell">
+            <button class="btn btn-edit" (click)="editProduct(product)">Edit</button>
+            <button class="btn btn-delete" (click)="deleteProduct(product.productId)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

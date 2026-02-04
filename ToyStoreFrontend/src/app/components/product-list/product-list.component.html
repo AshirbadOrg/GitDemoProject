@@ -1,0 +1,62 @@
+<div class="product-list-container">
+  <header class="header">
+    <h1>🧸 Kids Toy Store</h1>
+    <div class="user-actions">
+      <button *ngIf="authService.isAdmin()" class="btn btn-admin" (click)="goToAdmin()">
+        Admin Panel
+      </button>
+      <button class="btn btn-logout" (click)="logout()">Logout</button>
+    </div>
+  </header>
+
+  <div class="filters">
+    <div class="search-box">
+      <input
+        type="text"
+        [(ngModel)]="searchTerm"
+        placeholder="Search toys..."
+        class="form-control"
+      />
+    </div>
+    
+    <div class="category-filter">
+      <label for="category">Filter by Category:</label>
+      <select
+        id="category"
+        [(ngModel)]="selectedCategoryId"
+        (change)="onCategoryChange()"
+        class="form-control"
+      >
+        <option [value]="0">All Categories</option>
+        <option *ngFor="let category of categories" [value]="category.categoryId">
+          {{ category.name }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="products-grid">
+    <div *ngFor="let product of filteredProducts" class="product-card">
+      <img [src]="product.imageUrl" [alt]="product.name" class="product-image" />
+      <div class="product-info">
+        <h3>{{ product.name }}</h3>
+        <p class="category-badge">{{ product.categoryName }}</p>
+        <p class="age-range">Age: {{ product.ageRange }}</p>
+        <p class="description">{{ product.description }}</p>
+        <div class="product-footer">
+          <span class="price">${{ product.price.toFixed(2) }}</span>
+          <span class="stock" [class.low-stock]="product.stockQuantity < 10">
+            {{ product.stockQuantity }} in stock
+          </span>
+        </div>
+        <button class="btn btn-view" (click)="viewProduct(product.productId)">
+          View Details
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="filteredProducts.length === 0" class="no-products">
+    <p>No products found.</p>
+  </div>
+</div>
