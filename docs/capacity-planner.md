@@ -47,7 +47,7 @@ This capacity planner helps teams track resource availability, allocations, and 
 2. Update the Sprint/Week header with the date range
 3. List all team members with their roles
 
-### 2. Setting Availability
+### 2. Setting Availability standards
 
 **Availability (%)** represents the percentage of a standard work week available for project work:
 
