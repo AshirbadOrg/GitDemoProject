@@ -256,6 +256,24 @@ The frontend is fully responsive and works on:
 - Inventory management
 - Sales analytics dashboard
 
+## 📋 Project Planning Resources
+
+### Capacity Planner
+
+A lightweight capacity planning template to help teams manage resource allocation and sprint planning:
+
+- **[Capacity Planner Documentation](docs/capacity-planner.md)** - Comprehensive guide with usage instructions, examples, and best practices
+- **[Capacity Planner CSV Template](templates/capacity-planner.csv)** - Import into Excel, Google Sheets, or any spreadsheet application
+
+The capacity planner includes:
+- Team member resource tracking
+- Sprint/week allocation planning
+- Capacity utilization calculations
+- Example data with realistic scenarios
+- Weekly update workflow guidance
+
+Perfect for agile teams needing to track availability, allocations, and remaining capacity across sprints.
+
 ## 🐛 Troubleshooting
 
 ### Database Connection Issues

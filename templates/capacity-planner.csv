@@ -1,0 +1,25 @@
+Team Member,Role,Availability (%),Availability (Hours),Project/Epic,Planned Allocation (hrs),Sprint/Week,Notes,Total Allocated
+Sarah Chen,Senior Developer,100%,40,ToyStore Frontend,20,Week 6,Angular 20 upgrade,35
+Sarah Chen,Senior Developer,100%,40,Auth System Refactor,15,Week 6,JWT improvements,35
+Mike Rodriguez,Backend Developer,80%,32,ToyStore API,24,Week 6,New endpoints,30
+Mike Rodriguez,Backend Developer,80%,32,Database Optimization,6,Week 6,Query tuning,30
+Priya Patel,QA Engineer,100%,40,Testing - API,16,Week 6,Integration tests,38
+Priya Patel,QA Engineer,100%,40,Testing - Frontend,16,Week 6,E2E tests,38
+Priya Patel,QA Engineer,100%,40,Bug Fixes,6,Week 6,Critical issues,38
+Alex Thompson,DevOps Engineer,75%,30,CI/CD Pipeline,18,Week 6,Deploy automation,28
+Alex Thompson,DevOps Engineer,75%,30,Monitoring Setup,10,Week 6,Application metrics,28
+Jordan Lee,UX Designer,100%,40,Product Redesign,24,Week 6,Mobile responsiveness,32
+Jordan Lee,UX Designer,100%,40,User Research,8,Week 6,Customer feedback,32
+Emily Davis,Junior Developer,100%,40,Documentation,12,Week 6,API docs update,36
+Emily Davis,Junior Developer,100%,40,Minor Features,16,Week 6,UI enhancements,36
+Emily Davis,Junior Developer,100%,40,Code Reviews,8,Week 6,Learning,36
+
+CAPACITY SUMMARY,,,,,,,,,
+Team Member,Total Hours Available,Total Allocated,Remaining Capacity,Utilization (%),,,,,
+Sarah Chen,40,35,5,87.5%,,,,,
+Mike Rodriguez,32,30,2,93.75%,,,,,
+Priya Patel,40,38,2,95%,,,,,
+Alex Thompson,30,28,2,93.3%,,,,,
+Jordan Lee,40,32,8,80%,,,,,
+Emily Davis,40,36,4,90%,,,,,
+TEAM TOTAL,222,199,23,89.6%,,,,,
