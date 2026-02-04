@@ -21,7 +21,7 @@ A complete full-stack web application for a kids toy retail store featuring .NET
 
 ### Database (SQL Server)
 - Normalized database schema
-- Sample data with 8 categories and 24 products
+- Sample data with 9 categories and 27 products
 - Users with hashed passwords
 - Order management structure
 - Stored procedures ready structure
@@ -144,9 +144,10 @@ The database comes with two pre-configured accounts:
 3. Dolls & Stuffed Animals
 4. Building Blocks
 5. Board Games
-6. Outdoor Toys
+6. Outdoor Toys (Currently Out of Stock - Restocking soon)
 7. Puzzles
 8. Arts & Crafts
+9. Remote Control Toys (New!)
 
 ## 🔐 Authentication
 
