@@ -15,6 +15,9 @@ namespace ToyStoreAPI.Services
             _configuration = configuration;
         }
 
+        // NOTE: For production use, replace SHA256 with a secure password hashing algorithm
+        // like BCrypt, Argon2, or PBKDF2 with proper salting. SHA256 is used here for 
+        // simplicity in this demonstration project.
         public string HashPassword(string password)
         {
             using (var sha256 = SHA256.Create())

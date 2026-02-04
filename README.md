@@ -156,6 +156,8 @@ The application uses JWT (JSON Web Token) authentication:
 - Authorization header is included in protected API calls
 - Admin-only routes are protected with role-based authorization
 
+> **⚠️ Security Note:** This demo uses SHA256 for password hashing for simplicity. For production applications, use a secure password hashing algorithm like BCrypt, Argon2, or PBKDF2 with proper salting.
+
 ## 🎨 UI Features
 
 ### Product List Page
