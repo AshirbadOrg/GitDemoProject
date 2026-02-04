@@ -1,0 +1,138 @@
+.product-detail-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn-back {
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn-back:hover {
+  background-color: #545b62;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info-section h1 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 2em;
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #e3f2fd;
+  color: #1976d2;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+.age-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #fff3e0;
+  color: #f57c00;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+.description {
+  color: #555;
+  line-height: 1.6;
+  margin: 20px 0;
+  font-size: 1.1em;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.stock {
+  color: #4caf50;
+  font-weight: 500;
+}
+
+.stock.low-stock {
+  color: #f44336;
+}
+
+.btn-add-cart {
+  width: 100%;
+  padding: 15px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-add-cart:hover:not(:disabled) {
+  background-color: #5568d3;
+}
+
+.btn-add-cart:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  color: #999;
+  font-size: 1.2em;
+}
